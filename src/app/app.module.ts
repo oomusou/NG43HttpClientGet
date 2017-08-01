@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PostService } from './post.service';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [PostService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
